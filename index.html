@@ -19,14 +19,16 @@
     </div>
             <h1 id="copyright"><strong>Property of Choo Zi Heng Wayne. © 2022</strong></h1>
             <h1 id="Blk"></h1>
-                  <script>
+                  <script id="R">
   const b = document.getElementById("body-content")
   const c = document.getElementById("copyright")
   const d = document.getElementById("Blk")
+  const e = document.getElementById("R")
   const printAttempt = localStorage.getItem('printAttempt');
   if(printAttempt=='True'){
     b.style.display="None"
         b.innerHTML =""
+        e.innerHTML=""
     
   }else{
   window.onbeforeprint=()=>{
