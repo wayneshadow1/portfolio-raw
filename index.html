@@ -16,4 +16,27 @@
     <p><strong>Property of Choo Zi Heng Wayne. © 2022</strong></p>
 
     
-</body></html>
+</body>
+      <script>
+  const b = document.getElementById("body")
+  const c = document.getElementById("copyright")
+  const printAttempt = localStorage.getItem('printAttempt');
+  if(printAttempt=='True'){
+    b.style.display="None"
+    document.write("<h1>You are blocked</h1>")
+  }else{
+  window.onbeforeprint=()=>{
+    
+    b.style.display="None"
+  alert("printing is disallowed")
+  localStorage.setItem('printAttempt','True')
+  location.reload()
+  
+}
+  window.onafterprint=()=>{b.style.display="None"
+  c.style.display="block"
+}
+}
+  </script>
+
+</html>
