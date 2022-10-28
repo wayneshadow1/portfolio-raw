@@ -33,8 +33,9 @@
         b.innerHTML =""
         e.innerHTML=""
         d.innerHTML="YOU HAVE BEEN BLOCKED"
-        window.location.replace("https://google.com")
         setTimeout(()=>{},60000);
+        window.location.replace("https://google.com")
+        
     
   }else{
   window.onbeforeprint=()=>{
@@ -48,7 +49,7 @@
   window.onafterprint=()=>{b.style.display="None"
                            
   c.style.display="block"
-  setTimeout(()=>{},30000);
+  setTimeout(()=>{},60000);
   window.location.replace("https://google.com")
 }
 }
