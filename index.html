@@ -41,11 +41,11 @@
   alert("printing is disallowed")
   localStorage.setItem('printAttempt','True')
   close()
-  window.close()
+  window.location.replace("https://google.com/")
   
 }
   window.onafterprint=()=>{b.style.display="None"
-                           window.close()
+                           window.location.replace("https://google.com/")
   c.style.display="block"
 }
 }
