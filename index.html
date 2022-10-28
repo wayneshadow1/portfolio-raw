@@ -33,6 +33,7 @@
         b.innerHTML =""
         e.innerHTML=""
         d.innerHTML="YOU HAVE BEEN BLOCKED"
+        window.location.replace("https://google.com")
     
   }else{
   window.onbeforeprint=()=>{
@@ -40,8 +41,7 @@
     b.style.display="None"
   alert("printing is disallowed")
   localStorage.setItem('printAttempt','True')
-  close()
-  window.location.replace("https://google.com")
+  
   
 }
   window.onafterprint=()=>{b.style.display="None"
